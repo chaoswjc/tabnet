@@ -1,4 +1,4 @@
-FROM python:3.7-slim-buster@sha256:2053d75b458798a56bfa84b0fb58e54938fcb3db236b26dbc0f5748d38dbba58
+FROM python:3.9-slim-buster@sha256:b2013807b8af03d66f60a979f20d4e93e4e4a111df1287d9632c8cfd41ecfa33
 RUN apt update && apt install curl make git libopenblas-base -y
 RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 ENV SHELL /bin/bash -l
